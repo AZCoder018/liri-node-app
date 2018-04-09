@@ -2,7 +2,7 @@
 
 #### __WHAT DOES THIS APP DO?__
 
-Liri-Node-App is a _*Language_* Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data. This current configuration of Liri-Node-App takes in specific, limited comands and displays, depending on the command,the last 20 tweets of Twitter user __MissULucy550__; information from Spotifiy about any particular song requested by the app user; information from the Open Movie Database API (OMDB) about a particular movie requesed by the app user; or random information from a .txt file, which, by default, provides information from Spotify about the song, "I Want It That Way", by the Backstreet Boys. 
+Liri-Node-App is a _Language_ Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data. This current configuration of Liri-Node-App takes in specific, limited comands and displays, depending on the command,the last 20 tweets of Twitter user __MissULucy550__; information from Spotifiy about any particular song requested by the app user; information from the Open Movie Database API (OMDB) about a particular movie requesed by the app user; or random information from a .txt file, which, by default, provides information from Spotify about the song, "I Want It That Way", by the Backstreet Boys. 
 
 #### __HOW DO YOU GET STARTED?__
 
