@@ -139,18 +139,18 @@ function movieCheck() {
 
 function movieCall(omdbRequest) {
 	//variable to hold the omdb url search with api key and omdb request
-	var omdbMovie = "http://www.omdbapi.com/?apikey=40e9cece&t=" + omdbRequest;
+	var omdbMovie = "http://www.omdbapi.com/?apikey=40e9cece&tomatoes=true&t=" + omdbRequest;
 
 	request(omdbMovie, function (error, response, body) {
 		if (error) {
 			return console.log(error);
-		}
+		} else if (!error && response.statusCode === 200)
 
 //movie information to command line
 	console.log("Title of the movie: " + JSON.parse(body).Title);
 	console.log("Year the movie came out: " + JSON.parse(body).Year);
 	console.log("IMDB Rating: " + JSON.parse(body).imdbRating);
-	console.log("Rotten Tomatoes Rating: " + JSON.parse(body).tomatoRating);
+	console.log("Rotten Tomatoes Rating: " + JSON.parse(body).movie.Ratings[2].Value);
 	console.log("Country where the movie was produced: " + JSON.parse(body).Country);
 	console.log("Movie language: " + JSON.parse(body).Language);
 	console.log("Movie plot: " + JSON.parse(body).Plot);
